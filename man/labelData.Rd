@@ -21,3 +21,21 @@ Data.frame or tibble with labeled variables
 Label variables according external file
 Open a excel file and apply label to variables frome data base
 }
+\examples{
+Hmisc::label(iris)
+
+labels_data<-data.frame(camp=names(iris),
+description=c("Longitud de sepal",
+           "Amplada de sepal",
+            "longitul del petal",
+            "amplada del sepal",
+            "Especies varies"))
+labels_data
+                        
+iris_labeled<-labelData(iris,labels_data,"description")
+
+Hmisc::label(iris)
+            
+Hmisc::label(iris_labeled)
+
+}

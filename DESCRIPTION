@@ -15,4 +15,8 @@ Imports:
       tidyr,
       rlang,
       readxl,
-      Hmisc
+      Hmisc,
+      stringr,
+      foreign,
+      tibble,
+      data.table
